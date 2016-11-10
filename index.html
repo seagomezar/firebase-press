@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<!--Aca tu puedes poner el titulo de la presentación-->
+	<title>Firebase</title>
+	<meta name="description" content="Angular 2.0">
+	<meta name="author" content="Sebastian Gomez">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<div class="reveal">
+		<!-- Ninguno de los elementos anteriores es necesario que lo modifiques si no es necesario -->
+		<!-- Cada etiqueta section que se encuentre adentro del <div class="slides"> representará a una diapositiva  de la presentación -->
+		<div class="slides">
+			<section data-background="#0273D4">
+				<img data-src="images/inicial.png" />
+				<div class="firma">
+					<a href="http://www.sebastian-gomez.com">Sebastian Gomez</a> - <a href="https://twitter.com/sebasagar">@sebasagar</a>
+					<br/> Magister en ingeniería de sistemas e informática
+					<br/>Front End and Hybrid Developer</a>
+				</div>
+			</section>
+			<section data-background="#0273D4">
+				<p class="fragment">Hace unos días ....</p>
+				<blockquote class="fragment">
+					“Firebase es una base de datos en tiempo real que provee un API permitiendo que los desarrolladores almacenen y sincronicen
+					datos a través de múltiples clientes.”
+				</blockquote>
+				<p class="fragment">Ayer 00:30 Am ....</p>
+				<blockquote class="fragment">
+					“Firebase es una PLATAFORMA móvil y web con las herramientas necesarias para desarrollar aplicaciones de alta calidad”
+				</blockquote>
+
+			</section>
+			<section data-background="#0273D4">
+				<img data-src="images/wat.png" />
+			</section>
+			<section data-background="#0273D4">
+				<h3>La aburridora historia ....</h3>
+				<ul>
+					<li class="fragment">Firebase surgió desde Envolve (envolve era una empresita) en 2011</li>
+					<li class="fragment">Era una API para hacer un chat ...</li>
+					<li class="fragment">El CEO dijó: "Oh! que arquitectura mas asombrosa"</li>
+					<li class="fragment">la llamó firebase y la separo de envolve</li>
+					<li class="fragment">Preguntó quien quería invertir en esa "arquitecturita"</li>
+					<li class="fragment">Les dieron 7 millones de dolares -_- como inversión</li>
+					<li class="fragment">En el 2014 la compra google =|</li>
+					<li class="fragment">Así terminan todas las grandes empresas... por siempre jamás</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<img data-src="images/aburrido.jpg" />
+			</section>
+			<section data-background="#0273D4">
+				<h2>El esquema de Firebase</h2>
+				<img data-src="images/firebase-scheme.jpg" />
+			</section>
+			<section data-background="#0273D4">
+				<h2><i class="material-icons md-48 red2323">trending_up</i>Analitycs<i class="material-icons md-48 red2323">trending_up</i></h2>
+				<ul>
+					<li class="fragment">Reportes ilimitados de mas de 500 tipos</li>
+					<li class="fragment">Datos detallados del usuarios: Datos de error, efectividad de las notificaciones, eficacia del deep linking, compras
+						en la aplicación</li>
+					<li class="fragment">Fácil integración con Ad Networks</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2><i class="material-icons md-48 red2323">cloud</i>Mensajería en la nube<i class="material-icons md-48 red2323">cloud</i></h2>
+				<ul>
+					<li class="fragment">Envío y recepción ilimitada de mensajes</li>
+					<li class="fragment">InApp Menssages y push notifications</li>
+					<li class="fragment">Fácil integración con Ad Networks</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2><i class="material-icons md-48 red2323">supervisor_account</i>Autenticación<i class="material-icons md-48 red2323">supervisor_account</i></h2>
+				<img data-src="images/auth.png" />
+			</section>
+			<section data-background="#0273D4">
+				<h2><i class="material-icons md-48 red2323">settings_input_antenna</i>Base de datos en tiempo real<i class="material-icons md-48 red2323">settings_input_antenna</i></h2>
+				<ul>
+					<li class="fragment">NoSQL JSON database</li>
+					<li class="fragment">API fácil de usar</li>
+					<li class="fragment">Solución de conflictos de sincronización</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">save
+				<h2><i class="material-icons md-48 red2323">backup</i>Almacenamiento<i class="material-icons md-48 red2323">backup</i></h2>
+				<ul>
+					<li class="fragment">Subir imagenes (No importa la red)</li>
+					<li class="fragment">Escalable</li>
+					<li class="fragment">Autoización y seguridad de archivos</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2><i class="material-icons md-48 red2323">devices_other</i>Hosting<i class="material-icons md-48 red2323">devices_other</i></h2>
+				<ul>
+					<li class="fragment">Hosting de aplicaciones web de nivel óptimo</li>
+					<li class="fragment">CDN</li>
+					<li class="fragment">Despliegue atómico y simple sobre SSL</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2><i class="material-icons md-48 red2323">phone_android</i>Test Lab (Android)<i class="material-icons md-48 red2323">phone_android</i></h2>
+				<ul>
+					<li class="fragment">Automatización de pruebas sobre dispositivos Android</li>
+					<li class="fragment">Reportes y fallos detallados</li>
+					<li class="fragment">Integración con Android Studio</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<h2><i class="material-icons md-48 red2323">settings_remote</i>Configuración remota<i class="material-icons md-48 red2323">settings_remote</i></h2>
+				<ul>
+					<li class="fragment">Actualización de aplicaciones sin pasar por las stores</li>
+					<li class="fragment">Actualización selectiva (para unos sí, otros no)</li>
+				</ul>
+				<img data-src="images/remote.png" />
+			</section>
+			<section data-background="#0273D4">
+				<h2><i class="material-icons md-48 red2323">find_in_page</i>Otras cosas<i class="material-icons md-48 red2323">find_in_page</i></h2>
+				<ul>
+					<li class="fragment">Deeplinking</li>
+					<li class="fragment">Invites</li>
+					<li class="fragment">SMS y Emails gratis</li>
+					<li class="fragment">Adwords</li>
+				</ul>
+			</section>
+			<section data-background="#0273D4">
+				<img data-src="images/showme.jpg" />
+			</section>
+
+			<section data-background="#0273D4">
+				<h2>Construyamos una app desde cero ...</h2>
+				<ul>
+					<li class="fragment">Una app de valoración de meetups...</li>
+					<li class="fragment">Que guarde opiniones de los meetups en tiempo real ...</li>
+					<li class="fragment">Con alertas en tiempo real</li>
+					<li class="fragment">Y promedio de votos en tiempo real</li>
+					<li class="fragment">aaaaa .... y que sea responsiva</li>
+					<li class="fragment">y por supuesto en menos de 10 minutos porque tengo hambre</li>
+				</ul>
+				<img  class="fragment" data-src="images/homero-pensando.png" />
+			</section>
+
+			<section data-background="#0273D4">
+				<h2> Que los dioses de los live coding nos protejan ...</h2>
+				<ul>
+					<li>Instalar firebase: npm install -g firebase-tools</li>
+					<li>Crear la carpeta del proyecto</li>
+					<li>crear dos archivos app.js y index.html</li>
+					<li>Firebase init</li>
+					<li>Firebase login</li>
+					<li>Firebase deploy</li>
+				</ul>
+			</section>
+
+			<section  data-background="#0273D4">
+					<h2>Más Ejemplos y Referencias</h2>
+					<p><a href="http://firebase.google.com" target="_blank">Sitio Oficial de Firebase</a></p>
+					<p><a href="http://seagomezar.github.io/Firebase-Press/#/" target="_blank">Link a ésta presentación</a></p>
+					<p><a href="https://superapp-88577.firebaseapp.com" target="_blank">Link a la aplicación que haremos</a></p>
+			</section>
+
+			<section data-background="#0273D4">
+				<h1>Gracias</h1>
+				<img data-src="images/inicial.png" />
+				<div class="firma">
+					<a href="http://www.sebastian-gomez.com">Sebastian Gomez</a><br/><a href="https://twitter.com/sebasagar">Sígueme en twitter: @sebasagar</a><br/>
+					<a href="http://www.sebastian-gomez.com">Visita mi sitio web: www.sebastian-gomez.com</a>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!--El siguiente codigo son los archivos requeridos por reveal.js para funcioanr correctamente, ademas provee una serie de configuraciones con las cuales se puede jugar un poco más adelante-->
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script type="text/javascript" src="plugin/highlight/highlight.js"></script>
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			// Optional reveal.js plugins
+			dependencies: [{
+				src: 'lib/js/classList.js',
+				condition: function() {
+					return !document.body.classList;
+				}
+			}, {
+				src: 'plugin/markdown/marked.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/markdown/markdown.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				condition: function() {
+					return !!document.querySelector('pre code');
+				},
+				callback: function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src: 'plugin/zoom-js/zoom.js',
+				async: true
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}]
+		});
+	</script>
+</body>
+
+</html>
